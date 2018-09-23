@@ -2,3 +2,6 @@ user: root
 password: 
 domain: 
 location: "~/Downloads"
+canvas_url: "https://canvas.devpointlabs.com/api/v1"
+canvas_api_key: 
+

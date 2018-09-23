@@ -1,1 +1,3 @@
 server.yml
+files/*.csv
+rc_files/*.csv
