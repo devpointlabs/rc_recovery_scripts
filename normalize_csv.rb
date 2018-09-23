@@ -22,8 +22,8 @@ if config
           record[:records] << { date: row[1], status: row[2], course: row[3], teacher: row[4] }
         else
           url = "#{config['canvas_url']}/users/#{user_id}"
-          entry = { 
           user = HTTParty.get(url, headers: auth)
+          entry = { 
             id: user['id'], 
             course: row[3],
             name: user['name'],
@@ -34,7 +34,7 @@ if config
         end
       end
     end
-    CSV.open("files/course_#{data.first[:course]}.csv", "wb") do |csv|
+    CSV.open("files/#{data.first[:course]}.csv", "wb") do |csv|
       csv << ["id", "name", "email", "date", "status", "graded_by", "course"]
       data.each do |d|
         id = d[:id]
