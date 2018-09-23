@@ -1,3 +1,0 @@
-#SCRIPT to zip csv files on rc box
-#DOWNLOAD ZIPs from server
-#SCRIPT to normalize data from canvas

@@ -1,0 +1,1 @@
+scp <user>@<domain>:/home/rails/rollcall/files/*.csv <LOCATION>
